@@ -6,14 +6,14 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #405aed;
+    background-color: #ffffff;
     
 }
 	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
 
 
     #navbar {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         position: fixed;
         top: 0;
         width: 100%;
@@ -24,7 +24,7 @@ html, body {
       #navbar a {
         float: right;
         display: block;
-        color: #f2f2f2;
+        color: #000000;
         text-align: center;
         padding: 15px;
         text-decoration: none;
@@ -67,10 +67,14 @@ html, body {
 
 
 .word {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
     color: rgb(255, 255, 255);
-    font-size: 1rem;
+    font-size:1.6rem;
     min-height:40px;
-    
+    width: 50%;
+
     
   }
 
@@ -82,7 +86,6 @@ html, body {
     flex-direction: column;
     align-items: left;
     text-align: left;
-    background-color: #eeeeee1e;
     border: 1px solid black;
     border-radius: 10px;
     color: rgb(0, 0, 0);
@@ -90,31 +93,50 @@ html, body {
     font-size:3.2rem;
     margin-top: 3rem;
     padding: 5rem;
+    margin: 2rem;
+
    
 }
+
+.btn {
+    border: 2px solid black;
+    background-color: #eeeeee1e;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  /* Green */
+  .success {
+    border-color: #000000;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+  }
+  
+  .success:hover {
+    background-color: #000000;
+    color: white;
+  }
 
 .landing-buttom{
    
     display: flex;
     flex-direction: column;
     align-items:flex-end;
-    
     width: 75%;
+  
+}
+.landing-scroll{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.6rem;
 }
 
 
-button{
-    padding: 0.5rem;
-    width: 10rem;
-    height: 3rem;
-    background-color: rgb(0, 0, 0);
-    color: whitesmoke;
-    border: 5px solid #13166c;
-    margin: 15px;
-    border-radius: 15px;
-   
-    
-    }
 
 
 /* about */
