@@ -6,19 +6,38 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    
 }
 	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
 
-header{
+
+    #navbar {
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+      }
+      
+      #navbar a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+/* header{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-    background-color: rgb(32, 190, 124);
+    background-color: rgb(12, 33, 24);
     color:whitesmoke;
     width: 100vw;
-}
+} */
 
 .header-vmlogo{
  font-size: 40px;
@@ -48,7 +67,8 @@ header{
 .word {
     color: rgb(0, 0, 0);
     font-size: 1rem;
-    min-height:20px;
+    min-height:40px;
+    
   }
 
 /* .landing-hello{

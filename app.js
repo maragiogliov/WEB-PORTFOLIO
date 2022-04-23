@@ -1,4 +1,18 @@
-var words = ['Hi i like HTML', 'I also like css', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'],
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+
+  prevScrollpos = currentScrollPos;
+}
+
+// hello typescript
+var words = ['Hello World!', '	¡Hola Mundo!', '	你好世界！',	'Hallo Welt!', 'Ciao Mondo!', 'Привіт Світ!',],
     part,
     i = 0,
     offset = 0,
